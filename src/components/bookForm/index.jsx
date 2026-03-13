@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import { useForm } from "react-hook-form";
 import { bookAdd } from "../../redux/actions";
+import styles from "./styles.module.css";
 
 function BookForm({ bookAdd }) {
   const { register, handleSubmit, reset } = useForm();
@@ -9,8 +10,8 @@ function BookForm({ bookAdd }) {
     reset();
   };
   return (
-    <div>
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <div className={styles.formContainer}>
+      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
         <h2>Add new book</h2>
         <input
           placeholder="Title"
@@ -28,7 +29,9 @@ function BookForm({ bookAdd }) {
           type="number"
           {...register("year", { required: true })}
         />
-        <button type="submit">Add book</button>
+        <button className={styles.button} type="submit">
+          Add book
+        </button>
       </form>
     </div>
   );

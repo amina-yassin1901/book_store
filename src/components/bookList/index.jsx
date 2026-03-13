@@ -1,12 +1,13 @@
 import { connect } from "react-redux";
 import Book from "../book";
+import styles from "./styles.module.css";
 
 function BookList({ books }) {
   return (
-    <div>
-      <h2>Book List</h2>
+    <div className={styles.container}>
+      <h2 className={styles.title}>Book List</h2>
 
-      <ul>
+      <ul className={styles.list}>
         {books.length === 0 ? (
           <p>No books yet</p>
         ) : (

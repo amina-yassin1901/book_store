@@ -1,0 +1,54 @@
+.book {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.text {
+  margin: 4px 0;
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.buttonDelete {
+  background-color: #ff5a5a;
+  color: white;
+}
+
+.buttonDelete:hover {
+  background-color: #e04848;
+}
+
+.buttonToggle {
+  background-color: #27ae60;
+  color: white;
+}
+
+.buttonToggle:hover {
+  background-color: #1f8c4c;
+}
+
+.buttonEdit {
+  background-color: #f39c12;
+  color: white;
+}
+
+.buttonEdit:hover {
+  background-color: #d8850d;
+}

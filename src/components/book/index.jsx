@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import { useState } from "react";
 import UpdateForm from "../updateForm";
+import styles from "./style.module.css";
 import {
   bookRemove,
   bookUpdateInfo,
@@ -22,17 +23,31 @@ function Book({ book, bookRemove, bookUpdateInfo, bookToggleAvailAbility }) {
     />
   ) : (
     <>
-      <li>
+      <li className={styles.book}>
         <p>Title: {book.title}</p>
         <p>Author: {book.author}</p>
         <p>Year: {book.year}</p>
         <p>Status: {book.isAvailable ? "Available" : "Borrowed"}</p>
-
-        <button onClick={() => bookRemove(book.id)}>Delete</button>
-        <button onClick={() => bookToggleAvailAbility(book.id)}>
-          Toggle Availability
-        </button>
-        <button onClick={() => setIsEditing(true)}>Edit</button>
+        <div className={styles.actions}>
+          <button
+            className={styles.buttonDelete}
+            onClick={() => bookRemove(book.id)}
+          >
+            Delete
+          </button>
+          <button
+            className={styles.buttonToggle}
+            onClick={() => bookToggleAvailAbility(book.id)}
+          >
+            Toggle Availability
+          </button>
+          <button
+            className={styles.buttonEdit}
+            onClick={() => setIsEditing(true)}
+          >
+            Edit
+          </button>
+        </div>
       </li>
     </>
   );
