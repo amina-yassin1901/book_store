@@ -27,7 +27,9 @@ function Book({ book, bookRemove, bookUpdateInfo, bookToggleAvailAbility }) {
         <p>Title: {book.title}</p>
         <p>Author: {book.author}</p>
         <p>Year: {book.year}</p>
-        <p>Status: {book.isAvailable ? "Available" : "Borrowed"}</p>
+        <p className={book.isAvailable ? styles.available : styles.borrowed}>
+          {book.isAvailable ? "Available" : "Borrowed"}
+        </p>
         <div className={styles.actions}>
           <button
             className={styles.buttonDelete}
