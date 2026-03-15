@@ -1,0 +1,54 @@
+.container {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f6f7fb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.statCard {
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.statValue {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.sectionTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.empty {
+  color: #777;
+}

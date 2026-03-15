@@ -52,3 +52,12 @@ button {
 .buttonEdit:hover {
   background-color: #d8850d;
 }
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.borrowed {
+  color: red;
+  font-weight: bold;
+}

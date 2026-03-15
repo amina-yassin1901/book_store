@@ -1,0 +1,56 @@
+.container {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f6f7fb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.select {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #4f7cff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #3b66e0;
+}
+
+.buttonReturn {
+  background: #ff6b6b;
+}
+
+.buttonReturn:hover {
+  background: #e05555;
+}

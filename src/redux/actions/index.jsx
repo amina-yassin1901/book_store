@@ -35,3 +35,36 @@ export const bookToggleAvailAbility = (id) => {
     },
   };
 };
+export const readerAdd = (name, email) => {
+  return {
+    type: "READER_ADD",
+    payload: {
+      name,
+      email,
+    },
+  };
+};
+export const readersRemove = (id) => {
+  return {
+    type: "READER_REMOVE",
+    payload: { id },
+  };
+};
+export const bookLendToReader = (bookId, readerId) => {
+  return {
+    type: "BOOK_LEND_TO_READER",
+    payload: {
+      bookId,
+      readerId,
+    },
+  };
+};
+export const bookReturnFromReader = (bookId, readerId) => {
+  return {
+    type: "BOOK_RETURN_FROM_READER",
+    payload: {
+      bookId,
+      readerId,
+    },
+  };
+};
